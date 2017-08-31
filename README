@@ -1,0 +1,22 @@
+#BufBomb CMU
+
+##文件组织
+###hex文件夹下为带详细注释的输入文本文件
+###raw文件夹下为用hex2raw生成的程序可直接读入的文件
+###bin文件夹下为作业说明与可执行文件
+
+##解题思路：
+###0-Candle：通过缓冲区溢出直接修改return address
+###1-Sparkler：通过缓冲区溢出直接修改return address，同时注意栈中调用参数的位置
+###2-Firecracker：将汇编代码编译为机器码存入缓冲区，通过缓冲区溢出修改return address为之前写入的机器码位置
+###3-Dynamite：将汇编代码编译为机器码存入缓冲区，通过缓冲区溢出修改return address为之前写入的机器码位置，但要注意由于缓冲区溢出会破坏%ebp，故需要在汇编代码中恢复%ebp
+###4-Nitroglycerin：将汇编代码编译为机器码存入缓冲区末尾，机器码之前的缓冲区使用0x90（NOP指令，no operation）占位，通过缓冲区溢出修改return address为缓冲区差不多中间的位置（这样即使缓冲区内存有部分位移由于NOP指令占位也可执行到机器码部分），但要注意由于缓冲区溢出会破坏%ebp，故需要在汇编代码中恢复%ebp
+
+##测试环境：
+###Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-53-generic x86_64)
+
+##作者：
+###张钰晖
+###学号：2015011372
+###Email：yuhui-zh15@mails.tsinghua.edu.cn
+###Tel：185-3888-2881

